@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABA | تمويل شخصي سريع — جمعية رجال أعمال إسكندرية</title>
+    <meta name="description" content="تمويل شخصي يصل إلى 500,000 جنيه بموافقة خلال 72 ساعة بضامن واحد فقط. قدّم الآن مع ممثلة التمويل المعتمدة نجلاء محمد.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="scroll-locked">
+
+<!-- ==================== TASK BAR (Hidden during lock) ==================== -->
+<nav class="taskbar" id="taskbar">
+    <div class="taskbar-inner">
+        <a href="#hero" class="taskbar-logo">
+            <img src="media/logo.png" alt="ABA Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+            <span class="logo-fallback" style="display:none;">ABA</span>
+        </a>
+        <ul class="taskbar-links" id="taskbarLinks">
+            <li><a href="#calculator"><i class="fa-solid fa-calculator"></i> حاسبة القسط</a></li>
+            <li><a href="#features"><i class="fa-solid fa-star"></i> المميزات</a></li>
+            <li><a href="#docs"><i class="fa-solid fa-file-lines"></i> الأوراق</a></li>
+            <li><a href="#agent"><i class="fa-solid fa-user-tie"></i> ممثلتنا</a></li>
+            <li><a href="#apply" class="taskbar-cta"><i class="fa-solid fa-paper-plane"></i> قدّم الآن</a></li>
+        </ul>
+        <button class="taskbar-hamburger" id="taskbarHamburger" aria-label="القائمة">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- Mobile Drawer -->
+<div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="drawer-panel">
+        <button class="drawer-close" id="drawerClose" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+        <ul class="drawer-links">
+            <li><a href="#calculator"><i class="fa-solid fa-calculator"></i> حاسبة القسط</a></li>
+            <li><a href="#features"><i class="fa-solid fa-star"></i> المميزات</a></li>
+            <li><a href="#docs"><i class="fa-solid fa-file-lines"></i> الأوراق المطلوبة</a></li>
+            <li><a href="#agent"><i class="fa-solid fa-user-tie"></i> ممثلتنا المعتمدة</a></li>
+            <li><a href="#reviews"><i class="fa-solid fa-comments"></i> آراء العملاء</a></li>
+            <li><a href="#apply" class="drawer-cta"><i class="fa-solid fa-paper-plane"></i> قدّم طلبك الآن</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<!-- ==================== HERO SECTION ==================== -->
+<section class="hero" id="hero">
+    <video class="hero-video" autoplay muted loop playsinline preload="auto">
+        <source src="media/hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-vignette"></div>
+    <div class="hero-grain"></div>
+
+    <!-- Phase 1: Cinematic Intro (first ~6 seconds) -->
+    <div class="hero-phase1" id="heroPhase1">
+        <div class="phase1-content">
+            <div class="phase1-line phase1-line-top"></div>
+            <p class="phase1-brand">ABA</p>
+            <p class="phase1-sub">جمعية رجال أعمال إسكندرية</p>
+            <div class="phase1-line phase1-line-bottom"></div>
+        </div>
+        <div class="phase1-progress">
+            <div class="phase1-progress-bar" id="phase1ProgressBar"></div>
+        </div>
+    </div>
+
+    <!-- Phase 2: Reveal Content -->
+    <div class="hero-phase2" id="heroPhase2">
+        <div class="hp2-inner">
+            <div class="reveal-badge rv-el" data-rv-delay="0">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>تمويل معتمد رسمياً من ABA</span>
+            </div>
+
+            <h1 class="hero-headline">
+                <span class="hl-line hl-line-1 rv-el" data-rv-delay="1">
+                    <em class="hl-script">Dream Big,</em>
+                </span>
+                <span class="hl-line hl-line-2 rv-el" data-rv-delay="2">
+                    Finance Faster<span class="hl-dot">.</span>
+                </span>
+            </h1>
+
+            <p class="hero-description rv-el" data-rv-delay="3">
+                Get up to <strong>EGP 500,000</strong> personal financing approved within <strong>72 hours</strong>, with a single guarantor — elegantly simple, professionally secured.
+            </p>
+
+            <div class="hero-metrics rv-el" data-rv-delay="4">
+                <div class="metric">
+                    <span class="metric-val" data-count="500">0</span>
+                    <span class="metric-unit">K EGP</span>
+                    <span class="metric-lbl">Maximum Financing</span>
+                </div>
+                <div class="metric-sep"></div>
+                <div class="metric">
+                    <span class="metric-val" data-count="72">0</span>
+                    <span class="metric-unit">hrs</span>
+                    <span class="metric-lbl">Approval Time</span>
+                </div>
+                <div class="metric-sep"></div>
+                <div class="metric">
+                    <span class="metric-val" data-count="1">0</span>
+                    <span class="metric-unit">only</span>
+                    <span class="metric-lbl">Guarantor Needed</span>
+                </div>
+            </div>
+
+            <div class="hero-actions rv-el" data-rv-delay="5">
+                <a href="#calculator" class="btn-gold">
+                    <i class="fa-solid fa-sliders"></i>
+                    Calculate Your Installment
+                </a>
+                <a href="#apply" class="btn-ghost">
+                    <i class="fa-regular fa-circle-check"></i>
+                    Apply Now — Free
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-cue" id="scrollCue">
+        <span class="cue-text">Discover More</span>
+        <div class="cue-mouse">
+            <div class="cue-wheel"></div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ==================== LOAN CALCULATOR ==================== -->
+<section class="calc-section" id="calculator">
+    <div class="container">
+        <header class="sec-head reveal-on-scroll">
+            <span class="sec-tag"><i class="fa-solid fa-chart-simple"></i> Smart Calculator</span>
+            <h2 class="sec-title">احسب قسطك الذكي</h2>
+            <p class="sec-desc">حرّك المؤشر واختَر المدة، وشوف قسطك الشهري يظهر أمامك لحظياً</p>
+        </header>
+
+        <div class="calc-grid">
+            <article class="calc-main card-premium reveal-on-scroll">
+                <div class="cm-field">
+                    <label for="loanRange">
+                        <i class="fa-solid fa-sack-dollar cm-icon"></i>
+                        مبلغ التمويل المطلوب
+                    </label>
+                    <div class="amount-display">
+                        <input type="range" id="loanRange" min="10000" max="500000" step="5000" value="150000">
+                        <div class="amount-value">
+                            <span id="loanDisplay">150,000</span>
+                            <small>جنيه مصري</small>
+                        </div>
+                        <div class="amount-range-labels">
+                            <span>10K</span>
+                            <span>250K</span>
+                            <span>500K</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cm-field">
+                    <label>
+                        <i class="fa-solid fa-calendar-days cm-icon"></i>
+                        مدة السداد
+                    </label>
+                    <div class="term-chips" id="termChips">
+                        <button class="chip active" data-months="12">12 شهر</button>
+                        <button class="chip" data-months="24">24 شهر</button>
+                        <button class="chip" data-months="36">36 شهر</button>
+                        <button class="chip" data-months="48">48 شهر</button>
+                        <button class="chip" data-months="60">60 شهر</button>
+                    </div>
+                </div>
+
+                <div class="cm-result">
+                    <div class="cmr-hero">
+                        <span class="cmr-label">القسط الشهري التقريبي</span>
+                        <div class="cmr-value">
+                            <span id="instValue">0</span>
+                            <em>ج.م / شهرياً</em>
+                        </div>
+                    </div>
+                    <div class="cmr-breakdown">
+                        <div class="brk-row">
+                            <span>إجمالي المبلغ المسدد:</span>
+                            <strong id="totalValue">— ج.م</strong>
+                        </div>
+                        <div class="brk-row">
+                            <span>نسبة الفائدة السنوية التقديرية:</span>
+                            <strong>≈ 15%</strong>
+                        </div>
+                        <div class="brk-row">
+                            <span>عدد الأقساط:</span>
+                            <strong id="countValue">12 قسط</strong>
+                        </div>
+                    </div>
+                    <div class="cmr-note">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        النسب تقديرية — القيمة النهائية تحددها الجمعية بعد مراجعة الملف.
+                    </div>
+                </div>
+            </article>
+
+            <aside class="calc-side card-premium reveal-on-scroll">
+                <div class="cs-orb"><i class="fa-solid fa-bolt"></i></div>
+                <h3>جاهز تبدأ؟</h3>
+                <p>لا تنتظر أكثر — املأ بياناتك وهيصلك رد خلال ساعات قليلة.</p>
+                <a href="#apply" class="btn-gold btn-block">
+                    <i class="fa-solid fa-paper-plane"></i> قدّم طلبك مجاناً
+                </a>
+                <div class="cs-divider"></div>
+                <ul class="cs-perks">
+                    <li><i class="fa-solid fa-clock"></i> موافقة سريعة</li>
+                    <li><i class="fa-solid fa-lock"></i> بياناتك محمية بالكامل</li>
+                    <li><i class="fa-solid fa-handshake-angle"></i> استشارة مجانية</li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+</section>
+
+
+<!-- ==================== FEATURES ==================== -->
+<section class="feat-section" id="features">
+    <div class="container">
+        <header class="sec-head light reveal-on-scroll">
+            <span class="sec-tag gold"><i class="fa-solid fa-gem"></i> Why Choose Us</span>
+            <h2 class="sec-title dark">مميزات لا تُقاوَم</h2>
+            <p class="sec-desc dark">ثلاثة أسباب تجعلنا الخيار الأول لكل من يبحث عن تمويل ذكي وسريع</p>
+        </header>
+
+        <div class="feat-grid">
+            <article class="feat-card reveal-on-scroll">
+                <div class="fc-num">01</div>
+                <div class="fc-icon-wrap"><i class="fa-solid fa-money-bill-transfer"></i></div>
+                <h3>تمويل حتى 500 ألف</h3>
+                <p>مبالغ كبيرة تناسب كل طموحاتك — سواء مشروع صغير أو التزامات عائلية أو أي احتياج مالي آخر.</p>
+                <div class="fc-accent"></div>
+            </article>
+
+            <article class="feat-card feat-highlighted reveal-on-scroll">
+                <div class="fc-flag"><i class="fa-solid fa-fire"></i> الأسرع</div>
+                <div class="fc-num">02</div>
+                <div class="fc-icon-wrap"><i class="fa-solid fa-stopwatch-20"></i></div>
+                <h3>موافقة خلال 72 ساعة</h3>
+                <p>ملفك يُراجَع بكفاءة عالية دون انتظار طويل. الموافقة تصلك في ثلاثة أيام عمل فقط.</p>
+                <div class="fc-accent"></div>
+            </article>
+
+            <article class="feat-card reveal-on-scroll">
+                <div class="fc-num">03</div>
+                <div class="fc-icon-wrap"><i class="fa-solid fa-user-shield"></i></div>
+                <h3>ضامن واحد يكفي</h3>
+                <p>لا حاجة لعقارات أو شهادات متعددة — ضامن واحد بسيط كافٍ لإتمام الإجراءات بسلاسة.</p>
+                <div class="fc-accent"></div>
+            </article>
+        </div>
+    </div>
+</section>
+
+
+<!-- ==================== DOCUMENTS ==================== -->
+<section class="docs-section" id="docs">
+    <div class="container">
+        <header class="sec-head reveal-on-scroll">
+            <span class="sec-tag"><i class="fa-solid fa-folder-open"></i> Simple Process</span>
+            <h2 class="sec-title">الأوراق المطلوبة</h2>
+            <p class="sec-desc">ثلاث وثائق بسيطة تفصلك عن الحصول على تمويلك</p>
+        </header>
+
+        <div class="docs-flow">
+            <article class="doc-node reveal-on-scroll">
+                <div class="dn-step">STEP 1</div>
+                <div class="dn-icon"><i class="fa-solid fa-id-card"></i></div>
+                <h3>بطاقة الرقم القومي</h3>
+                <p>سارية الصلاحية — وجه وظهر بجودة واضحة</p>
+            </article>
+
+            <div class="doc-link"><i class="fa-solid fa-chevron-left"></i></div>
+
+            <article class="doc-node reveal-on-scroll">
+                <div class="dn-step">STEP 2</div>
+                <div class="dn-icon"><i class="fa-solid fa-users"></i></div>
+                <h3>بطاقة الضامن</h3>
+                <p>وجه وظهر — ضامن واحد فقط كافي تماماً</p>
+            </article>
+
+            <div class="doc-link"><i class="fa-solid fa-chevron-left"></i></div>
+
+            <article class="doc-node reveal-on-scroll">
+                <div class="dn-step">STEP 3</div>
+                <div class="dn-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                <h3>وصّل مرافق حديث</h3>
+                <p>كهرباء أو مياه أو غاز باسم مقدم الطلب</p>
+            </article>
+        </div>
+
+        <div class="docs-tip reveal-on-scroll">
+            <i class="fa-solid fa-lightbulb tip-icon"></i>
+            <p>وجود مفردات مرتب أو شهادة دخل <strong>يسرّع الموافقة بشكل ملحوظ</strong> لكنه ليس شرطاً إلزامياً.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ==================== AGENT / TRUST ==================== -->
+<section class="agent-section" id="agent">
+    <div class="container">
+        <div class="agent-grid">
+            <figure class="ag-photo reveal-on-scroll">
+                <div class="photo-frame">
+                    <img src="media/najla.jpg" alt="نجلاء محمد — ممثلة تمويل معتمدة لدى ABA" onerror="this.parentElement.innerHTML='<div class=\'ph-empty\'><i class=\'fa-solid fa-user-doctor\'></i><figcaption>نجلاء محمد</figcaption></div>'">
+                </div>
+                <div class="float-pill fp-a"><i class="fa-solid fa-circle-check"></i> معتمدة رسمياً</div>
+                <div class="float-pill fp-b"><i class="fa-solid fa-medal"></i> خبرة +10 سنوات</div>
+            </figure>
+
+            <div class="ag-info reveal-on-scroll">
+                <span class="sec-tag"><i class="fa-solid fa-user-tie"></i> Meet Your Representative</span>
+                <h2>لماذا تتقدم عبر <span class="gtxt">نجلاء محمد</span>؟</h2>
+                <p class="ag-bio">
+                    نجلاء موظفة تمويل <strong>معتمدة لدى جمعية رجال أعمال إسكندرية (ABA)</strong> بخبرة تمتد لأكثر من عشر سنوات في إدارة ملفات التمويل الشخصي. مهمتها أن ترشدك خطوة بخطوة، تجهّز ملفك باحترافية، وتتابعه حتى وصول المبلغ إلى حسابك.
+                </p>
+                <ul class="ag-points">
+                    <li><i class="fa-solid fa-check"></i> متابعة شخصية دقيقة لملفك من التقديم للقبض</li>
+                    <li><i class="fa-solid fa-check"></i> توفير الوقت والجهد بتجهيز صحيح من أول مرة</li>
+                    <li><i class="fa-solid fa-check"></i> استشارات مجانية وردود سريعة قبل وبعد التقديم</li>
+                    <li><i class="fa-solid fa-check"></i> تعامل راقٍ وسرية تامة لجميع بياناتك</li>
+                </ul>
+                <div class="ag-contact">
+                    <a href="https://wa.me/201107199771?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%86%D8%AC%D9%84%D8%A7%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D9%82%D8%B1%D8%B6" target="_blank" class="acard acard-wa">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div>
+                            <small>واتساب مباشر</small>
+                            <strong>تحدثي مع نجلاء الآن</strong>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ==================== TESTIMONIALS ==================== -->
+<section class="testi-section" id="reviews">
+    <div class="container">
+        <header class="sec-head cream reveal-on-scroll">
+            <span class="sec-tag warm"><i class="fa-solid fa-quote-right"></i> Client Stories</span>
+            <h2 class="sec-title ink">قصص نجاح حقيقية</h2>
+            <p class="sec-desc ink">عملاء اختاروا الطريق الصحيح — وهذه كلماتهم</p>
+        </header>
+
+        <div class="tst-slider reveal-on-scroll" id="tstSlider">
+            <div class="tst-track" id="tstTrack">
+                <blockquote class="tst-card">
+                    <div class="tst-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>"كنت محتاج سيولة لمشروع صغير بشكل عاجل، تواصلت مع نجلاء وخلال يومين كان الرد وصلني. تجربة احترافية تستحق الثناء."</p>
+                    <footer>
+                        <div class="av">م</div>
+                        <div><strong>محمد عبد الرحمن</strong><small>صاحب مشروع — بني سويف</small></div>
+                    </footer>
+                </blockquote>
+
+                <blockquote class="tst-card">
+                    <div class="tst-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>"الحمد لله حصلت على الموافقة بضامن واحد فقط. الإجراءات كانت سلسة ونجلاء تابعت معي كل خطوة بصبر واحترام."</p>
+                    <footer>
+                        <div class="av">أ</div>
+                        <div><strong>أحمد سمير</strong><small>موظف حكومي — مركز ناصر</small></div>
+                    </footer>
+                </blockquote>
+
+                <blockquote class="tst-card">
+                    <div class="tst-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>"أفضل قرار اتخذته هذا العام. القسط مريح والفائدة تنافسية مقارنة بأي جهة أخرى. شكراً على الخدمة الراقية."</p>
+                    <footer>
+                        <div class="av">س</div>
+                        <div><strong>سارة إبراهيم</strong><small>محاسبة — الفيوم</small></div>
+                    </footer>
+                </blockquote>
+
+                <blockquote class="tst-card">
+                    <div class="tst-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>"جرّبت عدة جهات سابقاً وكانت كلها معقدة. هنا وجدت البساطة والرقي في آنٍ واحد. أنصح بشدة بالتعامل معهم."</p>
+                    <footer>
+                        <div class="av">خ</div>
+                        <div><strong>خالد محمود</strong><small>مهندس — المنيا</small></div>
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="tst-nav">
+                <button class="tn-btn" id="tstPrev" aria-label="السابق"><i class="fa-solid fa-arrow-right"></i></button>
+                <div class="tst-dots" id="tstDots"></div>
+                <button class="tn-btn" id="tstNext" aria-label="التالي"><i class="fa-solid fa-arrow-left"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ==================== APPLICATION FORM ==================== -->
+<section class="apply-section" id="apply">
+    <div class="container">
+        <div class="ap-grid">
+            <div class="ap-intro reveal-on-scroll">
+                <span class="sec-tag"><i class="fa-solid fa-feather-pointed"></i> Start Today</span>
+                <h2>قدّم طلبك<br><span class="gtxt">في أقل من دقيقة</span></h2>
+                <p>املأ الحقول التالية بدقة، وستُحوَّل مباشرةً إلى محادثة واتساب مع نجلاء بجميع بياناتك جاهزة للإرسال.</p>
+                <ul class="ap-assure">
+                    <li><i class="fa-solid fa-shield-halved"></i> تشفير كامل وحماية صارمة للبيانات</li>
+                    <li><i class="fa-solid fa-bolt"></i> تحويل فوري إلى واتساب بمجرد الإرسال</li>
+                    <li><i class="fa-solid fa-gift"></i> التقديم والاستشارة مجانيان بالكامل</li>
+                </ul>
+            </div>
+
+            <form class="ap-form card-premium reveal-on-scroll" id="loanForm" novalidate>
+                <div class="fg full">
+                    <label for="fullName"><i class="fa-solid fa-signature"></i> الاسم الكامل <span class="req">*</span></label>
+                    <input type="text" id="fullName" name="fullName" placeholder="الاسم كما هو مدوّن في البطاقة" required>
+                    <span class="err-msg"></span>
+                </div>
+
+                <div class="row-2">
+                    <div class="fg">
+                        <label for="phone"><i class="fa-solid fa-mobile-screen-button"></i> رقم الموبايل <span class="req">*</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="01xxxxxxxxx" maxlength="11" required dir="ltr" class="ltr-input">
+                        <span class="err-msg"></span>
+                    </div>
+                    <div class="fg">
+                        <label for="nid"><i class="fa-solid fa-address-card"></i> الرقم القومي <span class="req">*</span></label>
+                        <input type="text" id="nid" name="nid" placeholder="14 رقماً" maxlength="14" required dir="ltr" class="ltr-input">
+                        <span class="err-msg"></span>
+                    </div>
+                </div>
+
+                <div class="row-2">
+                    <div class="fg">
+                        <label for="job"><i class="fa-solid fa-briefcase"></i> الوظيفة / مصدر الدخل</label>
+                        <select id="job" name="job">
+                            <option value="">— اختر —</option>
+                            <option>موظف حكومي</option>
+                            <option>قطاع خاص</option>
+                            <option>أعمال حرة</option>
+                            <option>صاحب مشروع</option>
+                            <option>صاحب معاش</option>
+                            <option>أخرى</option>
+                        </select>
+                    </div>
+                    <div class="fg">
+                        <label for="income"><i class="fa-solid fa-coins"></i> الدخل الشهري التقريبي</label>
+                        <select id="income" name="income">
+                            <option value="">— اختر —</option>
+                            <option>أقل من 5,000</option>
+                            <option>5,000 – 10,000</option>
+                            <option>10,000 – 20,000</option>
+                            <option>20,000 – 50,000</option>
+                            <option>أكثر من 50,000</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row-2">
+                    <div class="fg">
+                        <label for="amount"><i class="fa-solid fa-building-columns"></i> المبلغ المطلوب</label>
+                        <input type="number" id="amount" name="amount" placeholder="مثال: 150000" min="10000" max="500000">
+                    </div>
+                    <div class="fg">
+                        <label for="gov"><i class="fa-solid fa-location-dot"></i> المحافظة</label>
+                        <select id="gov" name="gov">
+                            <option>بني سويف</option>
+                            <option>الفيوم</option>
+                            <option>المنيا</option>
+                            <option>أسيوط</option>
+                            <option>القاهرة</option>
+                            <option>الجيزة</option>
+                            <option>الإسكندرية</option>
+                            <option>محافظة أخرى</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="fg full">
+                    <label for="notes"><i class="fa-solid fa-comment-dots"></i> ملاحظات إضافية (اختياري)</label>
+                    <textarea id="notes" name="notes" rows="3" placeholder="أي تفاصيل ترغب في توضيحها..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit" id="submitBtn">
+                    <span class="sb-txt"><i class="fa-brands fa-whatsapp"></i> إرسال الطلب عبر واتساب</span>
+                    <span class="sb-load hidden"><span class="spin"></span> جارٍ التحويل...</span>
+                </button>
+
+                <p class="fine-print">بالضغط على زر الإرسال، أنت توافق على تواصل فريق التمويل معك بخصوص طلبك.</p>
+            </form>
+
+            <div class="ap-success hidden" id="apSuccess">
+                <div class="succ-ring"><i class="fa-solid fa-check"></i></div>
+                <h3>تم فتح واتساب بنجاح!</h3>
+                <p>راجع الرسالة التي تحتوي على جميع بياناتك واضغط إرسال لتأكيد طلبك لدى نجلاء.</p>
+                <a href="#" class="btn-gold" id="retryLink"><i class="fa-solid fa-rotate-left"></i> إعادة المحاولة</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="site-footer" id="footer">
+    <div class="container">
+        <div class="ft-top">
+            <div class="ft-brand">
+                <div class="ft-logo-area">
+                    <img src="media/logo.png" alt="ABA" class="ft-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="ft-logo-fb" style="display:none;">ABA</div>
+                </div>
+                <h4>جمعية رجال أعمال إسكندرية</h4>
+                <p>نقدّم حلولاً تمويلية مبتكرة ومتوافقة مع أعلى المعايير المهنية لمساعدة عملائنا على تحقيق أهدافهم المالية بثقة وأناقة.</p>
+                <div class="ft-social">
+                    <a href="https://wa.me/201107199771" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="ft-cols">
+                <div class="ft-col">
+                    <h5>روابط سريعة</h5>
+                    <ul>
+                        <li><a href="#hero"><i class="fa-solid fa-angle-left"></i> الرئيسية</a></li>
+                        <li><a href="#calculator"><i class="fa-solid fa-angle-left"></i> حاسبة القسط</a></li>
+                        <li><a href="#features"><i class="fa-solid fa-angle-left"></i> المميزات</a></li>
+                        <li><a href="#docs"><i class="fa-solid fa-angle-left"></i> الأوراق</a></li>
+                        <li><a href="#apply"><i class="fa-solid fa-angle-left"></i> تقديم طلب</a></li>
+                    </ul>
+                </div>
+                <div class="ft-col">
+                    <h5>خدماتنا</h5>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-angle-left"></i> تمويل شخصي</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-left"></i> تمويل مشاريع صغيرة</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-left"></i> استشارات مالية</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-left"></i> متابعة الملفات</a></li>
+                    </ul>
+                </div>
+                <div class="ft-col ft-contact">
+                    <h5>تواصل معنا</h5>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot ci"></i> <span>بني سويف — مركز ناصر</span></li>
+                        <li><i class="fa-brands fa-whatsapp ci wa-ci"></i> <a href="https://wa.me/201107199771" target="_blank">واتساب مباشر</a></li>
+                        <li><i class="fa-solid fa-clock ci"></i> <span>السبت – الخميس: 9 ص – 6 م</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="ft-legal">
+            <i class="fa-solid fa-scale-balanced legal-icon"></i>
+            <p>هذا الموقع تسويقي لمسؤول تمويل معتمد لدى <strong>جمعية رجال أعمال إسكندرية ABA</strong>. الموافقة النهائية على التمويل تخضع لشروط الجمعية وسياساتها الداخلية وتقييم ملف العميل. نسب العوائد والأقساط المعروضة تقديرية وقد تختلف وفقاً للشروط النهائية.</p>
+        </div>
+
+        <div class="ft-bottom">
+            <p>© 2026 جميع الحقوق محفوظة — ممثلة التمويل المعتمدة: <strong>نجلاء محمد محمد</strong></p>
+            <p class="credit">Created<i class="fa-solid fa-heart heart-red"></i> by Ahmed Elarby</p>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Scroll Top Button -->
+<button class="back-top hidden" id="backTop" aria-label="رجوع للأعلى"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="main.js"></script>
+</body>
+</html>
